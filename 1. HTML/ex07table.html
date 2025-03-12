@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table
+     - table 태그를 이용하여 표를 생성하기
+     
+     1. "나 여기서부터 여기까지 표 만들게" : <table></table>
+     2. "몇 줄 만들거냐면" : table row <tr></tr>
+     3. "몇 칸 만들거나면" : table data <td></td>
+     3-2) "표의 헤더부분은 table header" : <th></th>
+     4. td 안에 데이터를 넣어준다.
+     -->
+
+     <!-- 표 병합 ⭐️⭐️⭐️
+        - rowspan : row끼리 병합 / 위아래 병합
+        - colspan : column끼리 병합 / 좌우 병합
+
+        rowspan="병합할 개수"
+     -->
+
+     <!-- 표 시작 -->
+     <table border="1px solid black" align="center" width="200px">
+
+        <caption>메뉴판</caption>
+
+        <!-- 1. 첫 번째 줄 -->
+        <tr bgcolor="skyblue" height="50px">
+            <th colspan="2">음료</th>
+        </tr>
+
+        <!-- (tr>td*2)*2 + Enter -->
+        <tr>
+            <td>아메리카노</td>
+            <td rowspan="2">2000</td>
+        </tr>
+        <tr>
+            <td>바닐라라떼</td>
+        </tr>
+     </table>
+
+     <!-- 실습 -->
+      <table border="1px solid black" align="center" width="200px">
+
+        <caption>JM ENTERTAINMENT</caption>
+
+        <tr bgcolor="yellow">
+            <th>이름</th>
+            <th colspan="2">성별/주소</th>
+            <th>비고</th>
+        </tr>
+        <tr>
+            <td>주현빈</td>
+            <td>남자</td>
+            <td>광주</td>
+            <td rowspan="4"></td>
+        </tr>
+        <tr>
+            <td>양정민</td>
+            <td>여자</td>
+            <td>광주</td>
+        </tr>
+        <tr>
+            <td>기융</td>
+            <td>남자</td>
+            <td>광주</td>
+        </tr>
+        <tr>
+            <td>장영민</td>
+            <td>남자</td>
+            <td>광주</td>
+        </tr>
+      </table>
+</body>
+</html>
