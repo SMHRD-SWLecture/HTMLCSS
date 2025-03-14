@@ -1,0 +1,51 @@
+.section1 {
+    background-color: aqua;
+}
+
+.section2 {
+    background-color: aquamarine;
+    width: 100px;
+    height: 10vh;
+    /* vh, vw : view hegith, view width
+        -> 전체 화면이 기준이 됨
+        -> 현재 스크린 크기가 h 1000 / w 800 이라면
+            1vh -> 10px, 1vw -> 8px
+    
+       % : 부모의 크기를 기준으로 함
+       
+       vmin, vmax : 내가 사용하는 스크린의 더 짧은 길이 vmin, 더 긴 길이가 vmax
+    */
+}
+
+/*
+    1. display : block
+    - 무조건 가로로 한줄의 영역을 차지하는 속성
+    - p, div, ... 등 기본값이 block
+    - width, height 값 설정 가능
+
+    2. display : inline
+    - 내가 작성한 컨텐츠까지를 크기로 삼는 속성
+    - span, a, ... 등 기본값이 inline
+    - width, height 값 설정 불가능
+        -> 이유? 이미 내가 준 컨텐츠를 본인은 크기로 인지하고 있음
+        -> 중복지시 아니야? 크기 설정 안 따를래
+
+    3. display : inline-block
+    - block의 특성을 가지고 있지만, inline의 특성을 가지고 있는 속성
+    - width, height 값 설정 가능
+    - 왼쪽에서 오른쪽으로 쌓이는 속성
+*/
+
+p{
+    background-color: rgb(255, 213, 158);
+    display: inline;
+}
+
+span{
+    background-color: rgb(131, 193, 196);
+    display: block;
+}
+
+div{
+    display: none;
+}

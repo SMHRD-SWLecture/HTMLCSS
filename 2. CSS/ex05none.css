@@ -1,0 +1,14 @@
+.answer {
+    display: none;
+}
+
+/*
+    1. 클래스가 question인 요소에
+    2. 마우스를 올리면
+    3. 옆에 있는
+    4. 클래스가 answer인 요소를 보이게!
+*/
+
+.question:hover+.answer {
+    display: block;
+}

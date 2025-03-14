@@ -1,0 +1,41 @@
+div{
+    background-color: aquamarine;
+    width: 80px;
+    display: inline;
+
+    margin: 10px;
+    /* 바깥 쪽에 여백을 두기 때문에 요소와 요소 사이의 거리가 멀어짐 */
+
+    padding: 10px;
+}
+
+/* margin : 요소의 경계선을 기준으로 바깥 여백을 설정 */
+/* padding : 요소의 경계선을 기준으로 안쪽 여백을 설정 */
+/*
+    프로젝트 진행 시
+        요소와 요소 사이의 거리를 두고 싶다? -> margin
+        요소 안에 컨텐츠들 사이에 거리를 두고 싶다? -> padding
+*/
+
+/*
+    margin, padding 사용 방법
+    - margin: 10px; (모든 방향에 적용)
+    - margin-top, margin-bottom, margin-left, margin-right : 10px; (각 방향에만 적용)
+*/
+
+/*
+    border-radius : 경계선을 둥글게 만들어주는 속성
+*/
+#box1 {
+    border-radius: 10px;
+}
+#box2 {
+    border-radius: 10%;
+}
+#box3 {
+    /*
+        border - 위/아래 - 좌/우 - radius: 지정
+        ex. border-bottom-left-radius: 20px;
+    */
+    border-top-right-radius: 10px;
+}

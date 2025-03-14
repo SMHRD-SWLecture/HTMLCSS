@@ -1,0 +1,35 @@
+div {
+    width: 500px;
+    background-color: whitesmoke;
+    border: 20px solid gray;
+    padding: 20px;
+}
+
+    /* Box Sizing : 요소의 크기를 화면에 표시하는 방식
+
+        1. content-box (기본값)
+        - 내가 설정한 width값을 content의 너비로 인식 
+        - 컨텐츠 영역만을 나의 크기로 삼는다.
+        - padding, border 값이 들어가면 들어간만큼 크기가 커진다.
+        - 내가 "너 500px이야" 라고 지정하더라도 추가 설정된 것들이 들어가면
+            크기가 580px 이 되기도 함! 
+
+        2. border-box 
+        - 내가 설정한 width값을 border까지의 너비로 인식 
+        - content + padding + border = 내가 설정한 너비 
+        - padding, border 값이 들어가면 컨텐츠의 크기를 줄여서라도 width 값에 맞춘다.
+        - 내가 "너 500px이야"라고 지정하면 추가 설정된 것들에 따라 
+            content의 크기가 줄어든다. => 도형자체는 500px으로 유지 
+        
+    */
+
+    /*
+        boxSizing 어떻게 활용할까?
+        - 서류, 화면설계서를 통해 px까지 전부 지정해두는 경우
+        - content-box 로 디자인하면 여백, 경계선에 따라 크기가 달라지기 때문에
+          border-box로 지정해두고 디자인하는 경우가 많다. 
+    */
+
+.bb {
+    box-sizing: border-box;
+}

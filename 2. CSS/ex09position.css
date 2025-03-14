@@ -1,0 +1,59 @@
+/*
+    position :  자유자재로 위치를 배치하는 속성
+        - margin은 바깥에 여백을 두었기 때문에 우리 눈에 이동하는 것처럼 보이지만 그 영역을 전부 차지하고 있는 개념! 
+        - position은 실제로 딱 그 요소가 이동만 할 수 있도록 만들어주는 기능
+    
+    위치를 움직여주는 속성 : left, right, top, bottom
+    ex. top: 30px -> 위에서부터 30px 이동
+*/
+
+div>div {
+    width: 100px;
+    height: 100px;
+}
+
+#static {
+    /*
+        1. static : 정적인
+        - position의 기본값
+        - 위치속성 비활성화
+    */
+    background-color: lightcoral;
+    top: 30px;
+}
+
+#relative {
+    /*
+        2. relative : 상대적인
+        - 원래 있던 위치를 기준으로 움직임
+        - 기준 : 원래 있던 위치
+    */
+    background-color: cornflowerblue;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+#absolute{
+    /*
+        3. absolute : 절대적인
+        - 위치 속성 활성화
+        - 기준 : position 속성이 없거나 static이 아닌 부모
+                부모요소가 없거나, 부모가 static이라면 쭉 올라가서 body 태그를 기준으로 이동
+    */
+    background-color: gold;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+#fixed{
+    /*
+        4. fixed
+        - 위치 속성 활성화
+        - 부모 무시, 스크롤 무시
+        - 기준 : body 태그
+    */
+    background-color: rgb(153, 228, 41);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}

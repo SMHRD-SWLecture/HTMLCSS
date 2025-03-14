@@ -1,0 +1,24 @@
+div{
+    width: 100px;
+    height: 100px;
+}
+
+#box1{
+    background-color: red;
+    display: inline-block;
+}
+
+#box2{
+    background-color: blue;
+    margin-left: 100px;
+}
+
+#box3{
+    background-color: darkgreen;
+    margin-left: 200px;
+}
+
+#box4{
+    background-color: darkgray;
+    margin-left: 300px;
+}
