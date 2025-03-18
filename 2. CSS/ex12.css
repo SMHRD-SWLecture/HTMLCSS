@@ -1,0 +1,51 @@
+/*
+    상단바 구현
+    - flexbox 기능 이용
+    - 부모 요소 : 높이 100px
+    - 자식 요소의 크기 비율 : 15% 75% 15%
+
+    -----------------------------------
+    - a태그 : 글자 크기 25px font-weight 400, margin/padding은 스스로
+    - text-decoration : none
+    - 모든 태그 : 높이 100px
+
+    1. 부모 요소에게 flex를 입력
+    2. 자식 요소들에게 크기 설정
+    3. 자식의 자식 요소들을 전부 가운데정렬
+
+    ** 부모-자식 관계는 절대적 X
+*/
+
+.container {
+    background-color: whitesmoke;
+    height: 100px;
+    display: flex;
+}
+
+a {
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.container > div {
+    flex-basis: 25%;
+}
+
+.box2 {
+    flex-basis: 50% !important;
+}
+
+.box2, .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

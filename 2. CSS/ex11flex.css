@@ -1,0 +1,80 @@
+/*
+    Flex (Flex Box)
+    - 레이아웃 배치 전용 기능
+    - Flex 레이아웃을 만들기 위한 기본적인 구조
+     > 부모요소 : container
+     > 자식요소 : item
+    
+    - 부모요소 / 자식요소 정하는 기준?
+     >> container : Flex의 영향을 받는 공간
+     >> item : 그 공간 내 설정된 속성에 따라 배치되는 요소
+
+    - 내가 움직여 주고 싶거나, 수정해주고 싶은 요소 => item
+    - 그 item의 부모 -> container
+
+    - 요소는 container이면서 item 일 수 있음
+*/
+/* A. container에 적용하는 속성 */
+
+.container {
+    background-color: whitesmoke;
+    height: 500px;
+
+    /*
+        1. flex 속성
+        - flexbox를 사용하기 위한 전원버튼
+        - item들은 부모의 메인축 방향대로 배치됨
+    */
+    display: flex;
+
+    /*
+        2. 배치 방향 설정(메인축 - 서브축 변경)
+        - row(가로배치), column(세로배치), row-reverse, column-reverse
+    */
+    flex-direction: row;
+
+    /*
+        3. 줄넘김 처리 설정
+        - nowrap(기본값), wrap, wrap-reverse
+    */
+    flex-wrap: nowrap;
+
+    /*
+        ⭐️⭐️ 정렬 ⭐️⭐️
+        - 메인축 (justify)
+        - 서브축 (align)
+        - flex-direction 설정에 따라 메인축/서브축은 가변적
+    */
+
+    /*
+        4. 메인축 방향 설정
+        - center, flex-start, flex-end, left, right
+        - space-between, space-around, space-evenly
+    */
+    justify-content: center;
+
+    /*
+        5. 서브축 방향 설정
+        - center, flex-start, flex-end, left, right
+        - space-between, space-around, space-evenly
+    */
+    align-items: center;
+}
+
+/* B. item에 적용하는 속성 */
+
+.item {
+    background-color: skyblue;
+    width: 100px;
+    height: 100px;
+    border: 1px solid navy;
+
+    /*
+        flex-basis : 아이템의 기본 크기 설정
+    */
+    flex-basis: 25%;
+}
+
+#section2 {
+    flex-basis: 50%;
+}
